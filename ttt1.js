@@ -3,6 +3,7 @@ var p2score=0
 var tie=0
 var turn=1
 
+<div>
 function checkwinnerX(){
    if ($(".row-1 .box.X").length === 3 
    || $(".row-2 .box.X").length === 3 
