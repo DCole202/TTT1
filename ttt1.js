@@ -17,10 +17,11 @@ function checkwinnerX(){
    &&$("#5").hasClass("X")
    &&$("#7").hasClass("X"))
    {
-       $(".box").removeClass("X")
-       $(".box").removeClass("O")
-       $(".box").html('')
-        return true
+    $(".box").removeClass("X")
+    $(".box").removeClass("O")
+    $(".box").removeClass("X")
+    $(".box").html('')
+    return true
    }
 }
 
@@ -47,7 +48,7 @@ function checkwinnerO(){
  }
 
 $(".box").click(function(){
-    if(turn===1){
+    if(turn===1 && ""){
         $(this).text("X")
         $(this).addClass("X")
         turn=2;
@@ -60,7 +61,7 @@ $(".box").click(function(){
     else{
         $(this).text("O")
         $(this).addClass("O")
-        turn=1
+        turn===2
         $("#turn").text(1)
         if (checkwinnerO()){
             p2score++
